@@ -125,19 +125,73 @@ const RIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
     </svg>
 );
 
+const NodeJsIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9.91 9.91a3 3 0 1 0 4.18 4.18" />
+    <path d="M12 2a10 10 0 1 0 10 10" />
+    <path d="m14.32 9.68 4.25-2.47" />
+    <path d="m11.53 15.53-3.2 4.01" />
+    <path d="m9.68 14.32-2.47 4.25" />
+    <path d="M15.53 11.53l4.01-3.2" />
+  </svg>
+);
+
+const PHPIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <ellipse cx="12" cy="12" rx="10" ry="9" />
+    <path d="M5.5 15C7.66 16.5 9.83 17 12 17s4.34-.5 6.5-2" />
+    <path d="M12 8V5" />
+    <path d="M12 19v-2" />
+    <path d="M9 12h6" />
+  </svg>
+);
+
+const ReactJsIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="2" />
+    <ellipse cx="12" cy="12" rx="10" ry="4" />
+    <ellipse cx="12" cy="12" rx="4" ry="10" transform="rotate(60 12 12)" />
+    <ellipse cx="12" cy="12" rx="4" ry="10" transform="rotate(120 12 12)" />
+  </svg>
+);
+
+const SqlIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <ellipse cx="12" cy="5" rx="9" ry="3" />
+    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+  </svg>
+);
+
+const CsvIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+    <polyline points="14 2 14 8 20 8" />
+    <line x1="16" y1="13" x2="8" y2="13" />
+    <line x1="16" y1="17" x2="8" y2="17" />
+    <polyline points="10 9 9 10 10 11" />
+  </svg>
+);
+
+
 export const LANGUAGES: Language[] = [
   { id: "plaintext", name: "Plain Text", extension: "txt", Icon: FileText },
   { id: "html", name: "HTML", extension: "html", Icon: HtmlIcon },
   { id: "css", name: "CSS", extension: "css", Icon: CssIcon },
   { id: "javascript", name: "JavaScript", extension: "js", Icon: JavaScriptIcon },
+  { id: "typescript", name: "TypeScript", extension: "ts", Icon: FileCode },
+  { id: "jsx", name: "React (JSX)", extension: "jsx", Icon: ReactJsIcon },
   { id: "python", name: "Python", extension: "py", Icon: PythonIcon },
   { id: "java", name: "Java", extension: "java", Icon: JavaIcon },
-  { id: "typescript", name: "TypeScript", extension: "ts", Icon: FileCode },
-  { id: "json", name: "JSON", extension: "json", Icon: FileCode },
-  { id: "xml", name: "XML", extension: "xml", Icon: FileCode },
-  { id: "markdown", name: "Markdown", extension: "md", Icon: FileCode },
   { id: "c", name: "C", extension: "c", Icon: FileCode },
   { id: "csharp", name: "C#", extension: "cs", Icon: CSharpIcon },
   { id: "cpp", name: "C++", extension: "cpp", Icon: FileCode },
   { id: "r", name: "R", extension: "r", Icon: RIcon },
+  { id: "php", name: "PHP", extension: "php", Icon: PHPIcon },
+  { id: "nodejs", name: "Node.js", extension: "js", Icon: NodeJsIcon },
+  { id: "sql", name: "SQL", extension: "sql", Icon: SqlIcon },
+  { id: "json", name: "JSON", extension: "json", Icon: FileCode },
+  { id: "xml", name: "XML", extension: "xml", Icon: FileCode },
+  { id: "markdown", name: "Markdown", extension: "md", Icon: FileCode },
+  { id: "csv", name: "CSV", extension: "csv", Icon: CsvIcon },
 ];
