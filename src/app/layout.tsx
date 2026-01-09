@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Polyglot Files",
+  title: "BEST Text Files",
   description: "Convert text and generate code examples in any language.",
 };
 

@@ -91,7 +91,7 @@ export default function Home() {
         <div className="flex items-center justify-center gap-2 mb-2">
            <FileCode2 className="w-8 h-8 text-primary" />
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground font-headline">
-            Polyglot Files
+            BEST Text Files
           </h1>
         </div>
         <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -204,7 +204,7 @@ export default function Home() {
         </Card>
       </main>
       <footer className="w-full max-w-6xl mt-8 text-center text-sm text-muted-foreground">
-        <p>&copy; {new Date().getFullYear()} Polyglot Files. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} BEST Text Files. All rights reserved.</p>
       </footer>
     </div>
   );
