@@ -88,6 +88,43 @@ const JavaIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   </svg>
 );
 
+const CSharpIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M14 8a2 2 0 1 0-4 0v8a2 2 0 1 0 4 0" />
+      <path d="M10 12h4" />
+      <path d="M5 10v4" />
+      <path d="M3 12h2" />
+      <path d="M19 10v4" />
+      <path d="M17 12h2" />
+    </svg>
+);
+
+const RIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M10 13a3 3 0 0 1-3-3V5h4" />
+      <path d="M10 10a3 3 0 0 1 3 3" />
+      <path d="M10 13l4 8" />
+    </svg>
+);
+
 export const LANGUAGES: Language[] = [
   { id: "plaintext", name: "Plain Text", extension: "txt", Icon: FileText },
   { id: "html", name: "HTML", extension: "html", Icon: HtmlIcon },
@@ -99,4 +136,8 @@ export const LANGUAGES: Language[] = [
   { id: "json", name: "JSON", extension: "json", Icon: FileCode },
   { id: "xml", name: "XML", extension: "xml", Icon: FileCode },
   { id: "markdown", name: "Markdown", extension: "md", Icon: FileCode },
+  { id: "c", name: "C", extension: "c", Icon: FileCode },
+  { id: "csharp", name: "C#", extension: "cs", Icon: CSharpIcon },
+  { id: "cpp", name: "C++", extension: "cpp", Icon: FileCode },
+  { id: "r", name: "R", extension: "r", Icon: RIcon },
 ];
