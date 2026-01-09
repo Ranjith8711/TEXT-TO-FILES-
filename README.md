@@ -1,5 +1,7 @@
-# Firebase Studio
+# TEXT TO FILES 
 
-This is a NextJS starter in Firebase Studio.
+nps install 
+npm run dev 
 
-To get started, take a look at src/app/page.tsx.
+# demo link :
+
