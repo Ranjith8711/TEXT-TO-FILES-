@@ -29,6 +29,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/hooks/use-toast";
 import { LANGUAGES, type Language } from "@/lib/languages";
 import { generateCodeAction } from "./actions";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
   const [input, setInput] = useState("");
@@ -87,17 +88,22 @@ export default function Home() {
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center p-4 sm:p-6 lg:p-8">
-      <header className="w-full max-w-6xl mb-8 text-center">
-        <div className="flex items-center justify-center gap-2 mb-2">
-           <FileCode2 className="w-8 h-8 text-primary" />
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground font-headline">
-            BEST Text Files
-          </h1>
+      <header className="w-full max-w-6xl mb-8 flex justify-between items-center">
+        <div className="flex-1 text-center">
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <FileCode2 className="w-8 h-8 text-primary" />
+            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground font-headline">
+              BEST Text Files
+            </h1>
+          </div>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Instantly convert text snippets or generate code examples with AI.
+            Select a language, input your text or a prompt, and let the magic happen.
+          </p>
         </div>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
-          Instantly convert text snippets or generate code examples with AI.
-          Select a language, input your text or a prompt, and let the magic happen.
-        </p>
+        <div className="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-8 lg:right-8">
+          <ThemeToggle />
+        </div>
       </header>
       <main className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
         {/* Input Card */}
